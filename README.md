@@ -1,10 +1,5 @@
 ### Загрузка данных
 1. Для доступа к данным необходимо примонтировать хранилище внутрь проекта:
-```console
-$ cd attributes
-$ mkdir mnt
-$ sudo mount -t cifs -o username=john.doe,domain=TVA //tva-storage-01.office.tevian.ru/tevian mnt/
-```
 2. Загрузите данные
 ```console
 $ dvc pull

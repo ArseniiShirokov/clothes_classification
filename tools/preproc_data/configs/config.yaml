@@ -1,0 +1,11 @@
+defaults:
+  - _self_
+  - type: upper_body
+  - datasets: latest_train
+
+name: attributes_train
+no_label: false
+
+hydra:
+  run:
+    dir: tools/preproc_data/outputs/${name}/${now:%Y-%m-%d_%H-%M-%S}

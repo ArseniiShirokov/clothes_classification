@@ -1,0 +1,75 @@
+defaults:
+  - mapping: att_3
+
+Name: example
+
+Model:
+  architecture:
+    name: Mbnet
+    freeze: false
+    init:
+      type: imagenet
+      path: None
+    activation type: prelu
+    output_type: 'Demography'
+    in_channels: 1280
+
+  oversampling:
+    train: False
+    test: False # TODO Now it is not working with true flag
+    val: False
+
+  test_time_mapping: ["Main_Color"]
+  MixUp: MixUp # CutMix
+
+  loss:
+    name: CrossEntropy
+    label smoothing: false
+    smoothing params: 0.1
+
+    weights: True
+    weight params:
+      min weight: 0.5
+      max weight: 10
+
+Transform:
+  jsd:
+    enabled: false
+    attributes:
+      - Sex
+      - Skin_Color
+      - Headwear
+      - Scarf
+
+  name: 'fixed'
+  means: [0.485, 0.456, 0.406] # image net values
+  stds: [0.229, 0.224, 0.225] # image net values
+  input shape: [3, 200, 200]
+
+Parameters:
+  deterministic: true
+  batch size: 50
+  num epochs: 1
+  num workers: 6
+  initial learning rate: 1.e-3
+  scheduler:
+    mode: step
+    epoch step: 30
+    power: 0.1
+  weight decay: 5.e-4
+  weight decay weights only: False
+  context device ids:
+    - 0
+  amp: False
+  optimizer:
+    name: Ranger
+    init trainer:
+    params:
+      sma threshold: 4
+      inter iters: 5
+      alpha: 0.5
+  ddp backend: nccl
+
+
+Experiment:
+    display period: 20

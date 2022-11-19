@@ -1,0 +1,5 @@
+defaults:
+  - mapping: att_4
+
+path: ../../data/Records/
+

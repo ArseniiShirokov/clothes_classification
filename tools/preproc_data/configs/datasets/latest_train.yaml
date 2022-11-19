@@ -1,0 +1,32 @@
+- image dir: Metro/MetroStage_1/images
+  markup: markup_att3.json
+
+- image dir: Metro/MetroStage_2/images
+  markup: markup_att3.json
+
+- image dir: Metro/MetroStage_3/images
+  markup: markup_att3.json
+
+- image dir: Metro/MetroStage_4/images
+  markup: markup_att3.json
+
+- image dir: Metro/MetroStage_5/images
+  markup: markup_att3.json
+
+- image dir: PandaMining/PandaStage_2/images
+  markup: markup_att3.json
+
+- image dir: PandaMining/PandaStage_3/images
+  markup: markup_att3.json
+
+- image dir: PandaMining/PandaStage_4/images
+  markup: markup_att3.json
+
+- image dir: Ivideon_v4/train_imgs
+  markup: train_att3.json
+
+- image dir: CrowdHuman_v1/train
+  markup: train_att3.json
+
+- image dir: Metro/MetroSummer_train/images
+  markup: markup_att3.json

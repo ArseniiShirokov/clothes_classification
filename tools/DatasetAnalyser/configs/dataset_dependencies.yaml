@@ -1,0 +1,27 @@
+attributes_train:
+  MetroSummer:
+    MetroStage_1:
+        - att_3
+    MetroStage_2:
+        - att_3
+    MetroStage_3:
+        - att_3
+    MetroStage_4:
+        - att_3
+    MetroStage_5:
+        - att_3
+  PandaImgs:
+    PandaStage_2:
+        - att_3
+    PandaStage_3:
+        - att_3
+    PandaStage_4:
+        - att_3
+  Ivideon_v4:
+    train_imgs:
+        - att_3
+  CrowdHuman_v1:
+    train:
+        - att_3
+  MetroSummer_train:
+    - att_3

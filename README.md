@@ -3,7 +3,7 @@
 
    [Train dataset](https://drive.google.com/drive/folders/1-Azvod5qbqpdo0CKijjZH-eQf-JYWaDE?usp=sharing)
    
-   [Test dataset]() 
+   [Test dataset](https://drive.google.com/drive/folders/1I8ZuEkHzAL8-MOHIhvY5qx6Kk-H7QSwb?usp=sharing) 
 ### Подготовка данных
 Конфигурации наборов данных можно менять в tools/preproc_data/configs/ 
 ```console

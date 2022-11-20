@@ -1,7 +1,9 @@
 ### Загрузка данных
 1. Загрузите данные:
-```console
-``` 
+
+   [Train dataset](https://drive.google.com/drive/folders/1-Azvod5qbqpdo0CKijjZH-eQf-JYWaDE?usp=sharing)
+   
+   [Test dataset]() 
 ### Подготовка данных
 Конфигурации наборов данных можно менять в tools/preproc_data/configs/ 
 ```console

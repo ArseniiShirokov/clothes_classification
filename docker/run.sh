@@ -6,4 +6,4 @@ docker run -it \
     --volume=${PWD}/../data/Records:/workspace/data \
     --volume=${PWD}/..:/workspace/code \
     --entrypoint /bin/bash \
-   ${USER}/upper_body:latest
+   ${USER}/clothes:latest

@@ -5,4 +5,4 @@ docker build --rm  \
     --build-arg USERNAME=${USER} \
     --build-arg USER_ID=$(id -u ${USER}) \
     --build-arg GROUP_ID=$(id -g ${USER}) \
-    --tag ${USER}/upper_body:latest .
+    --tag ${USER}/clothes:latest .

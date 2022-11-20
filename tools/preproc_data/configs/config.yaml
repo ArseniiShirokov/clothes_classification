@@ -1,9 +1,9 @@
 defaults:
   - _self_
-  - type: upper_body
-  - datasets: latest_train
+  - type: mnist_clothes
+  - datasets: fashion-mnist-train
 
-name: attributes_train
+name: train
 no_label: false
 
 hydra:

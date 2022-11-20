@@ -16,11 +16,10 @@ hydra:
 Data:
   data directory: /workspace/data
 
-  train dataset: attributes_train
-  val dataset: attributes_val
+  train dataset: train
+  val dataset: test
   test datasets:
-    - name: metro_spring_test
-    - name: metro_summer_test
+    - name: test
 
 Wandb:
   enabled: false

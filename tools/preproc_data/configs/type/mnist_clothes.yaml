@@ -1,6 +1,5 @@
 all_attributes:
   [
     'Filepath',
-    'Bag',
-    'Backpack'
+    'Type'
   ]

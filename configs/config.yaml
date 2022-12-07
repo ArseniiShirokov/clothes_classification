@@ -14,7 +14,7 @@ hydra:
     chdir: True
 
 Data:
-  data directory: /workspace/data
+  data directory: data/Records
 
   train dataset: train
   val dataset: test
@@ -22,7 +22,7 @@ Data:
     - name: test
 
 Wandb:
-  enabled: false
+  enabled: true
   account_key: '3bff8c661180b6af3727e36c470dd033e785414c'
   run_offline: False
   run:

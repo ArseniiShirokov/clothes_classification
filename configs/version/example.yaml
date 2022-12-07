@@ -4,7 +4,7 @@ defaults:
 Name: example
 
 Model:
-  architecture:
+  architecture: 
     name: Mbnet
     freeze: false
     init:
@@ -19,7 +19,7 @@ Model:
     test: False # TODO Now it is not working with true flag
     val: False
 
-  test_time_mapping: ["Type"]
+  test_time_mapping: []
   MixUp: None # MixUp # CutMix
 
   loss:
@@ -27,7 +27,7 @@ Model:
     label smoothing: false
     smoothing params: 0.1
 
-    weights: True
+    weights: False
     weight params:
       min weight: 0.5
       max weight: 10
@@ -45,14 +45,14 @@ Transform:
 
 Parameters:
   deterministic: true
-  batch size: 50
-  num epochs: 50
+  batch size: 128
+  num epochs: 30
   num workers: 6
-  initial learning rate: 1.e-3
+  initial learning rate: 1e-2
   scheduler:
     mode: step
-    epoch step: 10
-    power: 0.5
+    epoch step: 15
+    power: 0.1
   weight decay: 5.e-4
   weight decay weights only: False
   context device ids:

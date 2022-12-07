@@ -42,9 +42,9 @@ def create_lst(union_markup: dict, lst_name: str) -> None:
         for indx, img_path in enumerate(list(union_markup.keys())):
             if type(union_markup[img_path]) == type([]):
                 # Full body case ))))
-                union_markup[img_path] = [value for value in union_markup[img_path][0]]
+                union_markup[img_path] = [value for value in union_markup[img_path]]
                 # 2 -- all attributes  # TODO fix this hardcoding
-                while len(union_markup[img_path]) != 2:
+                while len(union_markup[img_path]) != 1:
                     union_markup[img_path].append(-1)
             else:
                 # 19 -- all attributes  # TODO fix this hardcoding

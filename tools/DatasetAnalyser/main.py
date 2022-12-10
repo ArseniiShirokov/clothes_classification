@@ -9,7 +9,7 @@ import cv2
 import glob
 
 ############
-mapping_version = "att_3"
+mapping_version = "fashion"
 part = "train"
 base_path = omegaconf.OmegaConf.load('configs/config.yaml')["path"]
 mapping = omegaconf.OmegaConf.load(f'configs/mapping/{mapping_version}.yaml')

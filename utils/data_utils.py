@@ -96,7 +96,7 @@ class TrainDataset(Dataset):
     def __getitem__(self, idx):
         data = self.imgrec.read_idx(idx)
         header, image = mx.image.recordio.unpack(data)
-        labels = torch.tensor(header.label, dtype=torch.long)[self.mask]
+        labels = torch.tensor([header.label], dtype=torch.long)
         img = mx.image.imdecode(image).asnumpy()
 
         image = self.simple_transform(image=img)
@@ -147,7 +147,7 @@ class TestDataset(Dataset):
     def __getitem__(self, idx):
         data = self.imgrec.read_idx(idx)
         header, image = mx.image.recordio.unpack(data)
-        labels = torch.tensor(header.label, dtype=torch.long)[self.mask]
+        labels = torch.tensor([header.label], dtype=torch.long)
         img = mx.image.imdecode(image).asnumpy()
         image = self.transform(image=img)
         image = image['image']

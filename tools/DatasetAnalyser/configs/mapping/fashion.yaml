@@ -1,0 +1,13 @@
+- length: 10
+  name: Type
+  values:
+    - T-shirt/top
+    - Trouser
+    - Pullover
+    - Dress
+    - Coat
+    - Sandal
+    - Shirt
+    - Sneaker
+    - Bag
+    - Ankle boots

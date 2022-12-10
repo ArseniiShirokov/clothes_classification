@@ -1,5 +1,5 @@
 defaults:
-  - mapping: att_4
+  - mapping: fashion
 
 path: ../../data/Records/
 

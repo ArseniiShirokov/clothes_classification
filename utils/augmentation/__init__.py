@@ -26,11 +26,11 @@ def get_aug(params: dict, transform_type: str):
         ])
     elif params['name'] == 'fixed':
         return A.Compose([
-            A.Resize(width=w + 20, height=h + 20),
-            A.RandomCrop(width=w, height=h),
+            # A.Resize(width=w + 20, height=h + 20),
+            # A.RandomCrop(width=w, height=h),
             A.HorizontalFlip(p=0.5),
-            A.RandomBrightnessContrast(p=0.2),
-            A.Blur(blur_limit=4, p=0.5),
+            # A.RandomBrightnessContrast(p=0.2),
+            # A.Blur(blur_limit=4, p=0.5),
             A.Normalize(mean=means, std=stds)
         ])
     else:
